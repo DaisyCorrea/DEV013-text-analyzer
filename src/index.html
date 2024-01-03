@@ -3,11 +3,45 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="author" context="#Daisy/>">
   <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <script src="index.js" type="module"></script>
+  <div id="container">
+      <header> <!-- no atributos id, ni name, ni class -->  
+          <h1>Analizador de texto</h1>
+      </header> 
+      <div class="clearfix"></div>
+        <div id="container1">
+        <ul>
+            <!--Recuento de palabras-->
+            <li class="contadores" data-testid="word-count">Recuento de Palabras: </li>
+            <!--Recuento de caracteres-->
+            <li class="contadores" data-testid="character-count">Recuento de Caracteres: </li>
+            <!--Recuento de caracteres sin espacios ni signos de puntuación-->
+            <li class="contadores" data-testid="character-no-spaces-count">Recuento Caracteres Sin Espacios y Puntuación: </li>
+            <!--Recuento de números-->
+            <li class="contadores" data-testid="number-count">Recuento de Números: </li>
+            <!--Suma total de números-->
+            <li class="contadores" data-testid="number-sum">Suma Total: </li>
+            <!--Longitud media de las palabras-->
+            <li class="contadores" data-testid="word-length-average">Longitud Media de Palabras: </li>
+          </ul>
+        </div>
+       <section id="container2">
+          <!--Caja de texto de a usuaria-->
+          <textarea name="user-input" rows="28" cols="50" placeholder="Ingrese su texto"></textarea>
+          <p id="valores"></p>
+          <!--Botón limpiar contenido-->
+          <button id="reset-button" title="Limpiar">Limpiar</button>
+        </section>
+      <div class="clearfix"></div>
+    <footer>
+      <p>Copyright @ Daisy Correa V 1.1. </p>
+    </footer>
+  </div>
 </body>
 </html>
